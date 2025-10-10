@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+      }
+      body {
+        background: linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        color: #0b1221;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.35;
+        font-size: 15px;
+      }
+      .booking {
+        width: 650px;
+        height: 400px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid #e6e9ef;
+        box-sizing: 0 6px 18px rgba(18, 38, 63, 0.08);
+        margin-bottom: 80px;
+      }
+      .booking .title {
+      }
+      .booking .title ul {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+      }
+      .booking .title button{
+        color: white;
+        background-color:rgb(39, 104, 254) ;
+        outline: 0;
+        border: 0;
+        border-radius: 6px;
+        height: 23px;
+        width: 86px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        transition: .4s linear;
+      }
+      .booking .title button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .register form {
+        display: grid;
+        justify-content: space-between;
+        gap: 8px;
+        margin-left: 10px;
+      }
+      .register form button {
+        height: 30px;
+        border-radius: 6px;
+        outline: 0;
+        border: 0;
+        background-color: rgb(39, 104, 254);
+        color: white;
+        width: 86px;
+        transition: .3s linear;
+      }
+      .register form button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+
+      }
+    </style>
+    <title>booking</title>
+  </head>
+  <body>
+    <div class="booking">
+      <div class="title">
+        <ul>
+          <li><button>Round Trip</button></li>
+          <li><button>One Way</button></li>
+          <li><button>Multi City</button></li>
+          
+        </ul>
+      </div>
+      <div class="register">
+        <form action="">
+          <label for="From">From</label>
+          <input
+            type="text"
+            name="From"
+            id="From"
+            placeholder="Type your City"
+          />
+          <label for="To">To</label>
+          <input
+            type="text"
+            name="To"
+            id="To"
+            placeholder="Type Destination city"
+          />
+          <label for="Depart">Departure Date</label>
+          <input type="date" name="Depart" id="Depart" />
+          <label for="Reuturn">Arrival Date</label>
+          <input type="date" name="Return" id="Return" />
+          <label for="Class"> Class</label>
+          <select name="Class" id="Class">
+            <option value="Economy">Economy</option>
+            <option value="FirstClass">First Class</option>
+            <option value="Family">Family</option>
+          </select>
+
+          <button>Search Flight</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

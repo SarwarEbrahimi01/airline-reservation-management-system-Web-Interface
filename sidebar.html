@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .sidebar {
+        background-color: #042331;
+        position: fixed;
+        left: 0;
+        width: 250px;
+        height: 100%;
+      }
+      header {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 20px;
+        line-height: 70px;
+        background: #063146;
+      }
+
+      .sidebar ul li a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        color: white;
+        font-size: 15px;
+        padding-left: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid black;
+        transition: 0.4s;
+      }
+      ul li:hover a {
+        padding-left: 50px;
+      }
+      .sidebar ul li a i {
+        margin-right: 8px;
+      }
+      .ing img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .ing {
+        text-align: center;
+      }
+      .ing p {
+        color: white;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 12px;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+      }
+      .btn button {
+        height: 25px;
+        width: 60px;
+        background-color: #015f8f;
+        border: 0;
+        outline: 0;
+        border-radius: 4px;
+        transition: .4s;
+      }
+      .btn button:hover {
+        transform: scale(1.2);
+        
+      }
+    </style>
+    <title>sidebar</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <header> <div class="nav-logo">JetBrains <i class="fa-solid fa-dragon"></i></div></header>
+      <div class="ing">
+        <img src="./images/ezat.JPG" alt="" />
+        <p>Ezatullah Hussaini</p>
+      </div>
+
+      <ul>
+        <li>
+          <a href="booking.html"><i class="fas fa-tv"></i>Book Ticket</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-user"></i>Profile</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-info-circle"></i>About</a>
+        </li>
+        <li>
+          <a href=""><i class="far fa-envelope"></i>Cotact</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-cogs"></i>Settings</a>
+        </li>
+      </ul>
+
+      <div class="btn"><button>Log out</button></div>
+    </div>
+  </body>
+</html>
