@@ -57,12 +57,14 @@
   </head>
   <body>
     <div class="container">
-      <form
-        method="post"
-        action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);   ?>"
-      >
-        <input type="text" placeholder="Username" required name="frm[username]" />
-        <input type="password" placeholder="Password" required name="frm[password]" />
+      <form method="post" action="./php/login2.php">
+        <input type="text" placeholder="Username" required name="text" />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          name="password"
+        />
         <input type="submit" value="Login" name="login" />
       </form>
       <p>Don't have account?<a href="signup.html">Create One</a></p>

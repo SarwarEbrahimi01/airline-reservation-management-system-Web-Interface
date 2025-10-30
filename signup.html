@@ -60,14 +60,21 @@
   <body>
     <div class="container">
       <header>Registeration Form</header>
-      <form action="">
-        <input type="text" id="UsernameId" placeholder="username" required />
+      <form method="post" action="./php/signup.php">
+        <input
+          type="text"
+          id="UsernameId"
+          placeholder="username"
+          required
+          name="username"
+        />
 
         <input
           type="password"
           id="PasswordId"
           placeholder="password"
           required
+          name="password"
         />
 
         <input
@@ -76,9 +83,16 @@
           id="ConfirmId"
           placeholder="confirm password"
           required
+          name="confirm"
         />
 
-        <input type="email" id="EmailId" placeholder="email" required />
+        <input
+          type="email"
+          id="EmailId"
+          placeholder="email"
+          required
+          name="email"
+        />
 
         <input type="submit" value="submit" />
       </form>
