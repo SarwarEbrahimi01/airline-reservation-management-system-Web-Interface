@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Flight Booking System</div>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" id="my-bookings">My Bookings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <h2>Search Flights</h2>
+        <form id="search-form">
+          <div class="form-group">
+            <label for="from">From:</label>
+            <select id="from" name="from" required></select>
+          </div>
+          <div class="form-group">
+            <label for="to">To:</label>
+            <select id="to" name="to" required></select>
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <button type="submit">Search Flights</button>
+        </form>
+      </div>
+
+      <div id="search-results" class="search-results">
+        <!-- Flight results will be displayed here -->
+      </div>
+
+      <div id="booking-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Book Flight</h2>
+          <form id="booking-form">
+            <div class="form-group">
+              <label for="passenger-first">First Name:</label>
+              <input
+                type="text"
+                id="passenger-first"
+                name="passenger-first"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="passenger-last">Last Name:</label>
+              <input type="text" id="passenger-last" name="passenger-last" />
+            </div>
+            <div class="form-group">
+              <label for="passenger-email">Email:</label>
+              <input
+                type="email"
+                id="passenger-email"
+                name="passenger-email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="passenger-phone">Phone:</label>
+              <input
+                type="tel"
+                id="passenger-phone"
+                name="passenger-phone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="passenger-address">Address:</label>
+              <input
+                type="text"
+                id="passenger-address"
+                name="passenger-address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="passenger-city">City:</label>
+              <input type="text" id="passenger-city" name="passenger-city" />
+            </div>
+            <div class="form-group">
+              <label for="passenger-state">State:</label>
+              <input type="text" id="passenger-state" name="passenger-state" />
+            </div>
+            <div class="form-group">
+              <label for="passenger-zip">Zipcode:</label>
+              <input type="text" id="passenger-zip" name="passenger-zip" />
+            </div>
+            <div class="form-group">
+              <label for="passenger-country">Country:</label>
+              <input
+                type="text"
+                id="passenger-country"
+                name="passenger-country"
+              />
+            </div>
+            <!-- Optional: allow providing an existing PassengerId (enter manually if you have it) -->
+            <div class="form-group">
+              <label for="passenger-id">Passenger ID (optional):</label>
+              <input
+                type="text"
+                id="passenger-id"
+                name="passenger-id"
+                placeholder="Enter PassengerId if known"
+              />
+            </div>
+            <div class="form-group">
+              <label for="seat-class">Travel Class:</label>
+              <select id="seat-class" name="seat-class" required></select>
+            </div>
+            <button type="submit">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="bookings-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>My Bookings</h2>
+          <div id="bookings-list">
+            <!-- Bookings will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
