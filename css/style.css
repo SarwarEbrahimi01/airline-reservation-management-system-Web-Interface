@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 body {
   background: linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
   background-color: #eeeff1;
+  
 }
 .header {
   height: 550px;
@@ -162,6 +164,7 @@ nav .nav-logo {
   font-size: 40px;
 }
 
+
 /*TOP TRAVEL SECTION */
 .heading {
   margin: 30px;
@@ -282,6 +285,48 @@ nav .nav-logo {
   transition: 0.5s ease;
 }
 
+/*Hotels Section*/
+.hotels {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background: #fff;
+}
+.first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 270px;
+  height: 270px;
+}
+.first img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.large-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 270px;
+}
+.large-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.top-hotels {
+  padding-top: 20px;
+}
+.top-hotels .text {
+  text-align: center;
+}
 /*FOOTER SECTION*/
 * {
   margin: 0;
@@ -291,7 +336,7 @@ nav .nav-logo {
 }
 footer {
   margin-top: 25px;
-  background-color: #343434;
+  background-color: #073b53;
   display: flex;
   justify-content: space-evenly;
   color: white;
@@ -337,4 +382,90 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 15px;
+}
+
+/*travel*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #3d5cb8;
+  --primary-color-dark: #334c99;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.travellers__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.travellers__card {
+  border-radius: 5rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.travellers__card__content {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+.travellers__card__content img {
+  position: absolute;
+  max-width: 70px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--extra-light);
+  border-radius: 100%;
+}
+
+.travellers__card__content h4 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.travellers__card__content p {
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+@media (width < 900px) {
+  .travellers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
